@@ -8,7 +8,7 @@ class FeatureXYZTest {
     @Test
     void verifyTransformToLower() {
         String text = FeatureXYZ.transformToCapital("text2");
-        Assert.assertEquals("text2", text);
+        Assert.assertEquals("TEXT2", text);
     }
 
     @Test
@@ -20,7 +20,7 @@ class FeatureXYZTest {
     @Test
     void verifyTransformToLowerSpecialChars() {
         String text = FeatureXYZ.transformToCapital("!@#$%^&*()Tt");
-        Assert.assertEquals("!@#$%^&*()tt", text);
+        Assert.assertEquals("!@#$%^&*()TT", text);
     }
 
     @Test
